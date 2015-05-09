@@ -14,6 +14,7 @@ public class SOUcitajIzFajla {
 			ObjectInputStream in = new ObjectInputStream(
 					new BufferedInputStream(new FileInputStream(putanja)));
 			
+			
 			LinkedList<Valuta> kursnaLista2 = (LinkedList<Valuta>)(in.readObject());
 			kursnaLista.clear();
 			kursnaLista.addAll(kursnaLista2);

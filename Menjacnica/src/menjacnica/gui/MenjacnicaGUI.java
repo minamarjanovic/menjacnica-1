@@ -260,7 +260,7 @@ public class MenjacnicaGUI extends JFrame {
 			mntmObrisiKurs = new JMenuItem("Obrisi kurs");
 			mntmObrisiKurs.addActionListener(new ActionListener() {
 				public void actionPerformed(ActionEvent e) {
-					GUIKontroler.prikaziObrisiKursGUI((Valuta)list.getSelectedValue());
+					GUIKontroler.prikaziObrisiKursGUI((Valuta) list.getSelectedValue());
 				}
 			});
 		}
@@ -276,15 +276,6 @@ public class MenjacnicaGUI extends JFrame {
 			});
 		}
 		return mntmIzvrsiZamenu;
-	}
-	
-	private void prikaziIzvrsiZamenuGUI() {
-		if (list.getSelectedValue() != null) {
-			IzvrsiZamenuGUI prozor = new IzvrsiZamenuGUI(this,
-					(Valuta) (list.getSelectedValue()));
-			prozor.setLocationRelativeTo(contentPane);
-			prozor.setVisible(true);
-		}
 	}
 	
 	protected void prikaziSveValute(LinkedList<Valuta> kursnaLista) {
