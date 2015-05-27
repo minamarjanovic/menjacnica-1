@@ -44,9 +44,9 @@ public class DodajKursGUI extends JFrame {
 
 	/**
 	 * Create the frame.
-	 * @param glavniProzor 
+	 *
 	 */
-	public DodajKursGUI(MenjacnicaGUI glavniProzor) {
+	public DodajKursGUI() {
 		setIconImage(Toolkit.getDefaultToolkit().getImage(DodajKursGUI.class.getResource("/icons/Screenshot.png")));
 		setResizable(false);
 		setTitle("Dodaj kurs");

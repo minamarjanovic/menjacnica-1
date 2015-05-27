@@ -52,14 +52,14 @@ public class GUIKontroler {
 	}
 	
 	public static void prikaziDodajKursGUI() {
-		DodajKursGUI prozor = new DodajKursGUI(glavniProzor);
+		DodajKursGUI prozor = new DodajKursGUI();
 		prozor.setLocationRelativeTo(glavniProzor.getContentPane());
 		prozor.setVisible(true);
 	}
 
 	public static void prikaziObrisiKursGUI(Valuta valuta) {
 		if (valuta != null) {
-			ObrisiKursGUI prozor = new ObrisiKursGUI(glavniProzor, valuta);
+			ObrisiKursGUI prozor = new ObrisiKursGUI(valuta);
 			prozor.setLocationRelativeTo(glavniProzor.getContentPane());
 			prozor.setVisible(true);
 		}
@@ -67,8 +67,7 @@ public class GUIKontroler {
 	
 	public static void prikaziIzvrsiZamenuGUI(Valuta valuta) {
 		if (valuta != null) {
-			IzvrsiZamenuGUI prozor = new IzvrsiZamenuGUI(glavniProzor,
-					valuta);
+			IzvrsiZamenuGUI prozor = new IzvrsiZamenuGUI(valuta);
 			prozor.setLocationRelativeTo(glavniProzor.getContentPane());
 			prozor.setVisible(true);
 		}
